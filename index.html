@@ -517,7 +517,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 // صوت الترحيب: يشتغل تلقائياً، وإذا منعه الجوال يشتغل مع أول لمسة — مرة وحدة في كل زيارة
 (function(){
   var a=document.getElementById('wv'),b=document.getElementById('vo'),h=document.getElementById('vh');if(!a)return;
-  var KEY='avva_welcome_v3',done=false;
+  var KEY='avva_welcome_v4',done=false;
   try{if(sessionStorage.getItem(KEY))return;}catch(e){}
   // تحويل الصوت إلى Blob — أضمن على أندرويد ومتصفح تيك توك من data:
   try{
@@ -540,8 +540,8 @@ document.getElementById('yr').textContent=new Date().getFullYear();
       if(p&&p.then){p.then(ok).catch(function(){hint(true);});}else{ok();}
     }catch(e){hint(true);}
   }
-  var EV=['touchend','pointerup','click','keydown','mousedown'];
-  function on(){EV.forEach(function(e){document.addEventListener(e,go,true);});}
+  var EV=['touchstart','pointerdown','touchmove','touchend','pointerup','click','keydown','mousedown','wheel'];
+  function on(){EV.forEach(function(e){document.addEventListener(e,go,{capture:true,passive:true});});}
   function off(){EV.forEach(function(e){document.removeEventListener(e,go,true);});}
   on();
   if(document.readyState==='complete')go();else window.addEventListener('load',go);
