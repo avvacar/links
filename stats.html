@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>إحصائيات الروابط — AVVA CAR</title>
+<meta name="theme-color" content="#07070B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0A0F'/%3E%3Cpath d='M32 10 51 21v22L32 54 13 43V21z' fill='none' stroke='%2300D7F9' stroke-width='2.5'/%3E%3Cpath d='M22 20l10 15 10-15M32 35v10' fill='none' stroke='%2300D7F9' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070B;--card:#101018;--card2:#14141E;--line:#1E1E2B;--line2:#2A2A3A;--text:#F2F4F6;--muted:#9AA0AE;--dim:#6B7080;--cyan:#00D7F9;--cyan-soft:rgba(0,215,249,.08);--wa:#25D366}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;line-height:1.6;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:-2;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='97' viewBox='0 0 56 97'%3E%3Cpath d='M28 1 55 16.5v31L28 63 1 47.5v-31zM28 63v34M1 16.5 0 16M55 16.5l1-.5' fill='none' stroke='%2300D7F9' stroke-opacity='.055' stroke-width='1'/%3E%3C/svg%3E");
+  -webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000,transparent 70%);mask-image:radial-gradient(ellipse at 50% 0%,#000,transparent 70%)}
+body::after{content:"";position:fixed;z-index:-1;width:900px;height:600px;top:-380px;left:50%;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(0,215,249,.16),transparent);pointer-events:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 48px}
+.en,.num{font-family:"Readex Pro",sans-serif;direction:ltr;unicode-bidi:isolate}
+.num{font-variant-numeric:tabular-nums}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0 10px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);text-decoration:none}
+.brand svg{width:42px;height:42px;filter:drop-shadow(0 0 12px rgba(0,215,249,.35))}
+.word{font-family:"Readex Pro";font-weight:700;font-size:20px;letter-spacing:.14em;direction:ltr}
+.word b{color:var(--cyan)}
+.chip{font-size:12.5px;color:var(--cyan);background:var(--cyan-soft);border:1px solid rgba(0,215,249,.25);padding:5px 13px;border-radius:999px}
+h1{font-family:"Readex Pro";font-size:clamp(24px,5vw,32px);font-weight:700;margin:26px 0 4px}
+h1 em{font-style:normal;color:var(--cyan)}
+.sub{color:var(--muted);font-size:14px}
+.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:14px;position:relative;overflow:hidden}
+.card h2{font-family:"Readex Pro";font-size:16px;font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:9px}
+.card h2 i{width:8px;height:8px;border-radius:2px;background:var(--cyan);box-shadow:0 0 10px var(--cyan);transform:rotate(45deg)}
+/* login */
+.login{max-width:380px;margin:60px auto 0;text-align:center}
+.login p{color:var(--muted);font-size:14px;margin:8px 0 18px}
+.pin{width:100%;height:56px;border-radius:14px;border:1px solid var(--line2);background:#0B0B12;color:var(--text);text-align:center;font-family:"Readex Pro";font-size:26px;letter-spacing:.5em;outline:none;direction:ltr}
+.pin:focus{border-color:var(--cyan);box-shadow:0 0 0 4px rgba(0,215,249,.12)}
+.btn{margin-top:12px;width:100%;height:50px;border:0;border-radius:14px;background:var(--cyan);color:#05121A;font-family:"Readex Pro";font-weight:600;font-size:16px;cursor:pointer}
+.err{color:#ff8a8a;font-size:13.5px;margin-top:10px;min-height:20px}
+/* kpis */
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+@media(max-width:620px){.kpis{grid-template-columns:1fr 1fr}.kpis .k:first-child{grid-column:1/-1}}
+.k{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:18px;position:relative;overflow:hidden}
+.k::after{content:"";position:absolute;inset:auto -30px -50px auto;width:120px;height:120px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,215,249,.14),transparent)}
+.k small{color:var(--muted);font-size:13px;display:block}
+.k b{display:block;font-family:"Readex Pro";font-size:38px;font-weight:600;line-height:1.2;margin-top:4px;color:var(--text)}
+.k.hero b{color:var(--cyan);font-size:46px;text-shadow:0 0 22px rgba(0,215,249,.35)}
+.k span{font-size:12.5px;color:var(--dim)}
+/* chart */
+.chart{display:flex;align-items:flex-end;gap:4px;height:170px;padding-top:10px;direction:ltr}
+.bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative;min-width:0}
+.bar i{display:block;width:100%;max-width:22px;border-radius:6px 6px 2px 2px;background:linear-gradient(180deg,#3BE3FF,#00A9C4);min-height:2px;transition:height .8s cubic-bezier(.2,.8,.2,1)}
+.bar.zero i{background:var(--line2)}
+.bar.today i{box-shadow:0 0 14px rgba(0,215,249,.6)}
+.bar em{position:absolute;top:-2px;font-style:normal;font-family:"Readex Pro";font-size:11px;color:var(--muted);transform:translateY(-100%)}
+.axis{display:flex;justify-content:space-between;direction:ltr;margin-top:8px;color:var(--dim);font-size:11.5px;font-family:"Readex Pro"}
+/* rows */
+.row{display:flex;align-items:center;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+.row .lbl{width:118px;flex:none;font-size:14px;display:flex;align-items:center;gap:8px}
+.row .lbl s{text-decoration:none;font-size:16px}
+.row .track{flex:1;height:10px;border-radius:999px;background:#0B0B12;border:1px solid var(--line);overflow:hidden}
+.row .track i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#00A9C4,#3BE3FF);width:0;transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.row.wa .track i{background:linear-gradient(90deg,#1DA851,#3BE37F)}
+.row .n{width:46px;flex:none;text-align:left;font-family:"Readex Pro";font-weight:600}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:620px){.grid2{grid-template-columns:1fr}}
+.grid2 .card{margin-top:14px}
+.tabs{display:flex;gap:6px}
+.tabs button{border:1px solid var(--line2);background:#0B0B12;color:var(--muted);border-radius:999px;padding:5px 13px;font:inherit;font-size:12.5px;cursor:pointer}
+.tabs button.on{background:var(--cyan);border-color:var(--cyan);color:#05121A;font-weight:600}
+.head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.head h2{margin-bottom:0}
+.foot{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;color:var(--dim);font-size:12.5px}
+.slogan{display:flex;align-items:center;gap:10px}
+.slogan svg{width:30px;height:30px}
+.slogan .w{font-family:"Readex Pro";font-weight:700;letter-spacing:.14em;font-size:14px;direction:ltr;color:var(--text);line-height:1.1}
+.slogan .w b{color:var(--cyan)}
+.out{background:none;border:1px solid var(--line2);color:var(--muted);border-radius:999px;padding:6px 14px;font:inherit;font-size:12.5px;cursor:pointer}
+.note{font-size:12.5px;color:var(--dim);margin-top:10px}
+.hidden{display:none!important}
+.spin{width:26px;height:26px;border:3px solid rgba(0,215,249,.2);border-top-color:var(--cyan);border-radius:50%;animation:sp .8s linear infinite;margin:50px auto}
+@keyframes sp{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="logo" viewBox="0 0 64 64">
+    <path d="M32 6 54.5 19v26L32 58 9.5 45V19z" fill="#0A0A0F" stroke="#00D7F9" stroke-width="1.6"/>
+    <path d="M24.5 21.5 32 33" stroke="#0A6E80" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M43 21.5 34.5 34" stroke="#0A6E80" stroke-width="3.2" stroke-linecap="round" opacity=".9"/>
+    <path d="M21 20 32 36.5 43 20" fill="none" stroke="#00D7F9" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 36.5v6.5" stroke="#00D7F9" stroke-width="3.6" stroke-linecap="round"/>
+    <path d="M32 46.5v1.5" stroke="#00D7F9" stroke-width="2.4" stroke-linecap="round" opacity=".6"/>
+  </symbol>
+</defs></svg>
+
+<div class="wrap">
+  <header>
+    <a class="brand" href="https://info.avvacar.com"><svg><use href="#logo"/></svg><div class="word">A<b>VV</b>A CAR</div></a>
+    <span class="chip">لوحة خاصة بالإدارة</span>
+  </header>
+
+  <section id="login" class="login">
+    <h1>إحصائيات <em>الروابط</em></h1>
+    <p>أدخل الرقم السري لعرض أرقام صفحة الروابط</p>
+    <input id="pin" class="pin" type="password" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="••••••">
+    <button id="go" class="btn">عرض الإحصائيات</button>
+    <div id="err" class="err"></div>
+  </section>
+
+  <div id="loading" class="spin hidden"></div>
+
+  <main id="dash" class="hidden">
+    <h1>إحصائيات <em>info.avvacar.com</em></h1>
+    <p class="sub" id="since"></p>
+
+    <div class="kpis">
+      <div class="k hero"><small>زوار اليوم</small><b class="num" id="vt">0</b><span>زائر مختلف</span></div>
+      <div class="k"><small>إجمالي الزوار</small><b class="num" id="vall">0</b><span id="views">0 زيارة</span></div>
+      <div class="k"><small>إجمالي الضغطات</small><b class="num" id="call">0</b><span id="ctoday">0 اليوم</span></div>
+    </div>
+
+    <div class="card">
+      <div class="head"><h2><i></i>الزوار يوم بيوم</h2>
+        <div class="tabs" id="tabs"><button data-d="7">7 أيام</button><button data-d="30" class="on">30 يوم</button><button data-d="90">90 يوم</button></div></div>
+      <div class="chart" id="chart"></div>
+      <div class="axis"><span id="ax1"></span><span id="ax2"></span></div>
+    </div>
+
+    <div class="card">
+      <h2><i></i>وش ضغطوا؟</h2>
+      <div id="targets"></div>
+    </div>
+
+    <div class="grid2">
+      <div class="card"><h2><i></i>من وين جوا؟</h2><div id="sources"></div></div>
+      <div class="card"><h2><i></i>نوع الجهاز</h2><div id="devices"></div></div>
+    </div>
+    <p class="note">الأرقام تُحسب من يوم تركيب العداد. «الزائر» = جهاز واحد، حتى لو دخل أكثر من مرة. ما نحفظ أي معلومة شخصية عن الزوار.</p>
+
+    <div class="foot">
+      <div class="slogan"><svg><use href="#logo"/></svg><div><div class="w">A<b>VV</b>ACAR</div><div>منكم ولكم</div></div></div>
+      <button class="out" id="out">خروج</button>
+    </div>
+  </main>
+</div>
+
+<script>
+var API='https://uctvlqcwltpiqabyvchb.supabase.co/functions/v1/link-stats';
+var $=function(id){return document.getElementById(id);};
+var DAYS=30,PIN='';
+var T={wa:['💬','واتساب خدمة العملاء','wa'],store:['🛒','المتجر'],order:['📦','تابع طلبك'],warranty:['🛡️','فعّل ضمانك'],admin:['✉️','الإدارة'],social:['📱','حسابات السوشال']};
+var SRC={tiktok:['🎵','تيك توك'],instagram:['📸','انستقرام'],snapchat:['👻','سناب شات'],x:['✖️','إكس'],whatsapp:['💬','واتساب'],google:['🔎','قوقل'],direct:['🔗','رابط مباشر'],other:['🌐','أخرى']};
+var DEV={android:['🤖','أندرويد'],ios:['🍎','آيفون'],desktop:['💻','كمبيوتر'],other:['📟','أخرى']};
+var fmt=function(n){return Number(n||0).toLocaleString('en-US');};
+function rows(el,obj,map,all){
+  var keys=all?Object.keys(map):Object.keys(obj);
+  keys.sort(function(a,b){return (obj[b]||0)-(obj[a]||0);});
+  var max=Math.max.apply(null,keys.map(function(k){return obj[k]||0;}).concat([1]));
+  el.innerHTML=keys.length?keys.map(function(k){var m=map[k]||['•',k];var n=obj[k]||0;
+    return '<div class="row '+(m[2]||'')+'"><div class="lbl"><s>'+m[0]+'</s>'+m[1]+'</div><div class="track"><i data-w="'+(n/max*100)+'"></i></div><div class="n num">'+fmt(n)+'</div></div>';}).join('')
+    :'<p class="sub">لا توجد بيانات بعد.</p>';
+  requestAnimationFrame(function(){setTimeout(function(){el.querySelectorAll('.track i').forEach(function(i){i.style.width=i.dataset.w+'%';});},60);});
+}
+function render(s){
+  var d=new Date(s.since||Date.now());
+  $('since').textContent=s.since?('من '+d.toLocaleDateString('ar-SA-u-ca-gregory',{day:'numeric',month:'long',year:'numeric'})+' — بتوقيت السعودية'):'العداد شغّال، وما فيه زيارات للحين.';
+  $('vt').textContent=fmt(s.visitors_today);$('vall').textContent=fmt(s.visitors_total);
+  $('views').textContent=fmt(s.views_total)+' زيارة';$('call').textContent=fmt(s.clicks_total);$('ctoday').textContent=fmt(s.clicks_today)+' اليوم';
+  var days=s.daily||[],max=Math.max.apply(null,days.map(function(x){return x.visitors;}).concat([1]));
+  $('chart').innerHTML=days.map(function(x,i){var h=x.visitors/max*100;return '<div class="bar'+(x.visitors?'':' zero')+(i===days.length-1?' today':'')+'" title="'+x.d+'"><i style="height:0" data-h="'+Math.max(h,1.5)+'"></i>'+(x.visitors&&days.length<=31?'<em>'+x.visitors+'</em>':'')+'</div>';}).join('');
+  requestAnimationFrame(function(){setTimeout(function(){document.querySelectorAll('.bar i').forEach(function(i){i.style.height=i.dataset.h+'%';});},60);});
+  if(days.length){$('ax1').textContent=days[0].d.slice(5).replace('-','/');$('ax2').textContent='اليوم';}
+  rows($('targets'),s.by_target||{},T,true);rows($('sources'),s.by_source||{},SRC,false);rows($('devices'),s.by_device||{},DEV,false);
+}
+function load(){
+  $('loading').classList.remove('hidden');$('err').textContent='';
+  fetch(API,{method:'POST',headers:{'Content-Type':'text/plain'},body:JSON.stringify({pin:PIN,days:DAYS})})
+  .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+  .then(function(x){
+    $('loading').classList.add('hidden');
+    if(!x.ok){try{localStorage.removeItem('avva_stats_pin');}catch(e){}$('login').classList.remove('hidden');$('dash').classList.add('hidden');$('err').textContent=x.j&&x.j.error==='pin'?'الرقم السري غير صحيح':'صار خطأ، حاول مرة ثانية';return;}
+    try{localStorage.setItem('avva_stats_pin',PIN);}catch(e){}
+    $('login').classList.add('hidden');$('dash').classList.remove('hidden');render(x.j);
+  }).catch(function(){$('loading').classList.add('hidden');$('login').classList.remove('hidden');$('err').textContent='تأكد من الاتصال بالإنترنت وحاول مرة ثانية';});
+}
+$('go').onclick=function(){PIN=$('pin').value.trim();if(PIN.length<6){$('err').textContent='الرقم السري 6 أرقام';return;}$('login').classList.add('hidden');load();};
+$('pin').addEventListener('keydown',function(e){if(e.key==='Enter')$('go').click();});
+$('tabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;DAYS=+b.dataset.d;this.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);});load();});
+$('out').onclick=function(){try{localStorage.removeItem('avva_stats_pin');}catch(e){}location.reload();};
+try{var p=localStorage.getItem('avva_stats_pin');if(p){PIN=p;$('login').classList.add('hidden');load();}}catch(e){}
+</script>
+</body>
+</html>
